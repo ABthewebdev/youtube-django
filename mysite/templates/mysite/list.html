@@ -1,0 +1,9 @@
+{% extends 'mysite/base.html' %}
+
+{% block content %}
+    <form>
+        {% csrf_token %}
+        {{forms}}
+        <button>Create new list</button>
+    </form>
+{% endblock content %}
